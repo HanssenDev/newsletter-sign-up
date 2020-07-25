@@ -1,0 +1,23 @@
+{
+  "name": "newsletter-sign-up",
+  "version": "1.0.0",
+  "description": "newsletter sign up application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanssenDev/newsletter-sign-up.git"
+  },
+  "author": "Hanssen Ramanjooloo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanssenDev/newsletter-sign-up/issues"
+  },
+  "homepage": "https://github.com/HanssenDev/newsletter-sign-up#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
