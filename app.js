@@ -38,7 +38,7 @@ app.post("/", function(req, res) {
 
     const options = {
         method: "POST",
-        auth: "hanssen7:54f83092b078ce9f125a6384026515d4-us17"
+        auth: "hanssen7:a399601b0e3c24628e7599ef34ff34a9-us17"
     }
     
     const request = https.request(url, options, function(response) {
@@ -53,23 +53,17 @@ app.post("/", function(req, res) {
         })
     })
 
-    // request.write(jsonData);
+    request.write(jsonData);
     request.end();
 
 })
-
-
-// API Key
-// 54f83092b078ce9f125a6384026515d4-us17
-
-// MailChimp List ID
-// 734d4df17c
 
 app.post("/failure", function(req, res) {
     res.redirect("/");
 })
 
 
-app.listen(3000, function() {
+app.listen(3000 || process.env.PORT, function() {
     console.log("Server is running on port 3000");
 });
+
